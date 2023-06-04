@@ -10,6 +10,7 @@ let asteroids = [];
 let score = 0;
 let lives = 3;
 let gameover = false;
+
 let musicToggle = false;
 
 // Music and Sound Effects B)
@@ -21,9 +22,9 @@ buttonClickSound.src = "src/ButtonClick.wav";
 shipBreakdownSound.src = "src/ShipBreakdown.wav";
 asteroidzMusic.src = "src/Asteroidz.mp3";
 
-asteroidzMusic.volume = 0.5;
-buttonClickSound.volume = 0.5;
-shipBreakdownSound.volume = 0.5;
+asteroidzMusic.volume = 0.05;
+buttonClickSound.volume = 0.05;
+shipBreakdownSound.volume = 0.05;
 
 
 document.addEventListener('DOMContentLoaded', SetupCanvas);
@@ -54,7 +55,6 @@ function SetupCanvas(){
     });
 
     Start();
-
 }
 
 
@@ -85,7 +85,7 @@ class Ship {
     getShipY(){
         return this.y;
     }
-    
+
     getVelX(){
         return this.velX;
     }
@@ -93,9 +93,10 @@ class Ship {
     getVelY(){
         return this.velY;
     }
-    
+
     getShipSpeed(){
         return this.speed;
+    }
 
     Rotate(dir){
         this.angle += this.rotateSpeed * dir;
@@ -204,6 +205,7 @@ Draw() {
 
     ctx.closePath();
     ctx.stroke();
+    // ctx.fill();
 }
 
 }
@@ -410,7 +412,8 @@ function Render(){
 
         ctx.font = "20px 'Aadhunik', Arial";
         ctx.fillText("~ ~ ~ Hit the R key to Restart. ~ ~ ~", canvasWidth / 2 - 160, canvasWidth / 2 - 110);
-        
+     
+        // asteroidzMusic.muted = true;
         gameover = true;  
         musicToggle = false;
     }
