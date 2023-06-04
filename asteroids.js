@@ -86,6 +86,14 @@ class Ship {
         return this.y;
     }
     
+    getVelX(){
+        return this.velX;
+    }
+
+    getVelY(){
+        return this.velY;
+    }
+    
     getShipSpeed(){
         return this.speed;
 
@@ -209,7 +217,7 @@ class Bullet{
         this.angle = angle;
         this.height = 4*scale;
         this.width = 4*scale;
-        this.speed = 4 + getShipSpeed();
+        this.speed = 4 + Math.sqrt(ship.getVelX() * ship.getVelX() + ship.getVelY() * ship.getVelY());
         this.velX = 0;
         this.velY = 0;
     }
