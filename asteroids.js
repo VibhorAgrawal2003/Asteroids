@@ -85,6 +85,9 @@ class Ship {
     getShipY(){
         return this.y;
     }
+    
+    getShipSpeed(){
+        return this.speed;
 
     Rotate(dir){
         this.angle += this.rotateSpeed * dir;
@@ -206,7 +209,7 @@ class Bullet{
         this.angle = angle;
         this.height = 4*scale;
         this.width = 4*scale;
-        this.speed = 4;
+        this.speed = 4 + getShipSpeed();
         this.velX = 0;
         this.velY = 0;
     }
