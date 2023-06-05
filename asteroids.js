@@ -22,9 +22,9 @@ buttonClickSound.src = "src/ButtonClick.wav";
 shipBreakdownSound.src = "src/ShipBreakdown.wav";
 asteroidzMusic.src = "src/Asteroidz.mp3";
 
-asteroidzMusic.volume = 0.05;
-buttonClickSound.volume = 0.05;
-shipBreakdownSound.volume = 0.05;
+asteroidzMusic.volume = 0.8;
+buttonClickSound.volume = 0.8;
+shipBreakdownSound.volume = 0.8;
 
 
 document.addEventListener('DOMContentLoaded', SetupCanvas);
