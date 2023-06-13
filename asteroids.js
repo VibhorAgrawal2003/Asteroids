@@ -245,7 +245,7 @@ class Asteroid{
         this.level = level || 1;
         this.shipX = ship.getShipX();
         this.shipY = ship.getShipY();
-        this.fieldRadius = 100*scale;
+        this.fieldRadius = 300*scale;
 
         this.x = x || ((Math.random() < 0.5)? Math.floor(Math.random() * (this.shipX - this.fieldRadius)) : Math.floor(Math.random() * (canvasWidth - this.shipX - this.fieldRadius)));
         this.y = y || ((Math.random() < 0.5)? Math.floor(Math.random() * (this.shipY - this.fieldRadius)) : Math.floor(Math.random() * (canvasHeight - this.shipY - this.fieldRadius)));
