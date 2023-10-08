@@ -4,7 +4,7 @@ An arcade game made using HTML, CSS and JavaScript inspired from the Atari game,
 
 ### Hosted Link
 
-The game is hosted using GitHub Pages: [👉click me to play asteroids👈](https://playasteroids.netlify.app/)
+The game is hosted using Netlify: [👉click me to play asteroids👈](https://playasteroids.netlify.app/)
 
 ### Contributing
 
