@@ -1,6 +1,6 @@
 # Asteroids
 
-An arcade game made using HTML, CSS and JavaScript inspired from the Atari game, Asteroids.
+An arcade game made using HTML, CSS and JavaScript inspired from the Atari game, Asteroids. This game was built to learn Javascript and practice Object Oriented Programming concepts along with rendering frames to build canvas based 2D web games.
 
 ### Hosted Link
 
